@@ -6,7 +6,7 @@ const bodyParser = require('body-parser'); // import body-parser
 
 //rotas
 app.get('/', (req, res) => { // create route
-    res.send('testando nodemon')
+    res.send('Está funcionando')
 })
 
 // db connection
