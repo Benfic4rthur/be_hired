@@ -1,7 +1,8 @@
-const Sequelize = require('sequelize'); // import sequelize
-const sequelize = new Sequelize('be_hired', 'root', 'root', { // connect to db
-    dialect: 'sqlite',
-    Storage: './db/app.db'
+const Sequelize = require('sequelize');
+
+const sequelize = new Sequelize({
+  dialect: 'sqlite',
+  storage: './db/app.db'
 });
 
-module.exports = sequelize // export connection
+module.exports = sequelize
